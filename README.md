@@ -37,4 +37,3 @@ uname -a
 sudo apt-get install lxc debootstrap bridge-utils lxc-templates
 ```
 
-
