@@ -37,3 +37,46 @@ uname -a
 sudo apt-get install lxc debootstrap bridge-utils lxc-templates
 ```
 
+#### Урок 3
+
+Поиск образов через консоль
+>docker pull ubuntu
+
+Посмотреть какие образы скачаны, но не установлены
+>docker images
+
+Удалить образ
+>docker rmi ubuntu
+
+Удалить все образы через переменную
+>docker rmi $(docker images -aq)
+
+Выводит список запущенных контейнеров
+>docker ps
+
+Выводит список остановленных контейнеров
+>docker ps -a
+
+Вывести список id всех контейнеров
+>docker images -aq
+
+Сделать контейнер доступным извне, публикацию портов
+>docker run -–publish 8080:80 nginx
+
+Проверка порта
+>curl 127.0.0.1:8080
+
+Дать имя контейнеру
+>docker run --name testcontainer ubuntu
+
+Остановить контейнер по id
+>docker stop 5a81c4b8502e
+
+Посмотреть занятое место на жестком диске
+>docker system df
+
+Очистить занятое место, удалить остановленные контейнеры
+>docker system prune -af
+
+Запустить контейнер в фоновом режиме
+>docker run -d ubuntu sleep 15
