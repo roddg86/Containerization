@@ -51,6 +51,9 @@ sudo apt-get install lxc debootstrap bridge-utils lxc-templates
 Удалить все образы через переменную
 >docker rmi $(docker images -aq)
 
+Удалить все контейнеры принудительно
+>docker rm $(docker ps -a -q) --force
+
 Выводит список запущенных контейнеров
 >docker ps
 
@@ -80,3 +83,17 @@ sudo apt-get install lxc debootstrap bridge-utils lxc-templates
 
 Запустить контейнер в фоновом режиме
 >docker run -d ubuntu sleep 15
+
+#### Урок 4
+
+Базовые приемы уменьшения размера образа  
+- Использовать меньше кол-во слоев  
+- Очистка кешей
+- Использование легковесных образов
+
+Скомпилировать докерфайл
+>docker build -t cowsaytest .
+
+В другой директории
+>docker build -t cowsaytest -f ./cowsaytest .
+
