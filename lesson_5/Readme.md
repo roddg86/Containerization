@@ -275,14 +275,14 @@ compo-adminer-1  | [Tue Jul 18 04:15:54 2023] [::ffff:172.18.0.1]:55692 Closing
 
 #### История(history):
 
-623  vim compose.yaml
-624  docker-compose up -d
-625  docker-compose ps
-626  docker-compose images
-627  curl http://localhost:6080/
-628  docker-compose logs -f db
-629  docker-compose logs -f adminer
-630  history
+623  vim compose.yaml  
+624  docker-compose up -d  
+625  docker-compose ps  
+626  docker-compose images  
+627  curl http://localhost:6080/  
+628  docker-compose logs -f db  
+629  docker-compose logs -f adminer  
+630  history  
 
 #### Скриншот:
 
