@@ -75,6 +75,6 @@ root@dmitry-vb:/home/roddg/doktest#
 511  sudo docker run -it java-demo  
 512  history  
 
-#### Сриншот:
+#### Скриншот:
 
 ![javaDocker.jpg](img%2FjavaDocker.jpg)
